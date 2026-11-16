@@ -19,7 +19,7 @@ Tested on Magento Open Source 2.4.7-p10, 2.4.8-p5 and 2.4.9 with the Luma theme 
 The module is the same for every plan. The plan is set in your Friendzy account.
 
 - Free: up to 51 shared sessions a month, and a 14-day trial with up to 500.
-- Friendzy Starter and Friendzy Growth: bought in your Friendzy account, or on Adobe Commerce Marketplace for a year. A Marketplace purchase is connected on the Subscription page of your Friendzy account, with your Marketplace user name and order number.
+- Friendzy Starter and Friendzy Growth: paid plans. The Subscription page of your Friendzy account shows where your store buys them. A plan bought on Adobe Commerce Marketplace is connected there with your Marketplace user name and order number.
 
 ## Install
 
