@@ -1,8 +1,8 @@
 {
-    "name": "friendzy/module-widget",
+    "name": "friendzy/magento-module",
     "description": "Friendzy: shoppers browse your store together, and with your advisers.",
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "proprietary",
     "homepage": "https://getfriendzy.com",
     "authors": [

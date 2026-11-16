@@ -25,7 +25,7 @@ The module is the same for every plan. The plan is set in your Friendzy account.
 
 From the Magento root, as the user that owns the Magento files:
 
-    composer require friendzy/module-widget
+    composer require friendzy/magento-module
     bin/magento module:enable Friendzy_Widget
     bin/magento setup:upgrade
     bin/magento cache:flush
@@ -67,7 +67,7 @@ https://getfriendzy.com/privacy
 ## Uninstall
 
     bin/magento module:uninstall Friendzy_Widget
-    composer remove friendzy/module-widget
+    composer remove friendzy/magento-module
 
 Uninstall deletes the module's settings (every `friendzy/` path in `core_config_data`), so a later install starts unconnected. It does not close the site in your Friendzy account: use Close this website there to close it and erase its data. A site Friendzy no longer sees is switched off after 30 days and erased 90 days later.
 
