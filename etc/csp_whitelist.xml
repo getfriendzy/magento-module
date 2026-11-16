@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp:etc/csp_whitelist.xsd">
+    <policies>
+        <policy id="script-src">
+            <values>
+                <value id="friendzy-app" type="host">friendzy.ro</value>
+                <value id="friendzy-hosts" type="host">*.friendzy.ro</value>
+                <value id="friendzy-com" type="host">getfriendzy.com</value>
+                <value id="friendzy-com-hosts" type="host">*.getfriendzy.com</value>
+                <value id="friendzy-online-hosts" type="host">*.friendzy.online</value>
+                <value id="friendzy-storefront" type="host">friendzy-public-eu.s3.eu-central-1.amazonaws.com</value>
+            </values>
+        </policy>
+        <policy id="connect-src">
+            <values>
+                <value id="friendzy-app" type="host">friendzy.ro</value>
+                <value id="friendzy-hosts" type="host">*.friendzy.ro</value>
+                <value id="friendzy-com" type="host">getfriendzy.com</value>
+                <value id="friendzy-com-hosts" type="host">*.getfriendzy.com</value>
+                <value id="friendzy-online-hosts" type="host">*.friendzy.online</value>
+                <value id="friendzy-sockets" type="host">wss://*.friendzy.ro</value>
+                <value id="friendzy-com-sockets" type="host">wss://*.getfriendzy.com</value>
+                <value id="friendzy-online-sockets" type="host">wss://*.friendzy.online</value>
+                <value id="friendzy-sentry" type="host">*.ingest.de.sentry.io</value>
+                <value id="friendzy-sentry-apex" type="host">ingest.de.sentry.io</value>
+            </values>
+        </policy>
+        <policy id="style-src">
+            <values>
+                <value id="friendzy-app" type="host">friendzy.ro</value>
+                <value id="friendzy-hosts" type="host">*.friendzy.ro</value>
+                <value id="friendzy-com" type="host">getfriendzy.com</value>
+                <value id="friendzy-com-hosts" type="host">*.getfriendzy.com</value>
+                <value id="friendzy-online-hosts" type="host">*.friendzy.online</value>
+                <value id="friendzy-storefront" type="host">friendzy-public-eu.s3.eu-central-1.amazonaws.com</value>
+            </values>
+        </policy>
+        <policy id="img-src">
+            <values>
+                <value id="friendzy-app" type="host">friendzy.ro</value>
+                <value id="friendzy-hosts" type="host">*.friendzy.ro</value>
+                <value id="friendzy-com" type="host">getfriendzy.com</value>
+                <value id="friendzy-com-hosts" type="host">*.getfriendzy.com</value>
+                <value id="friendzy-online-hosts" type="host">*.friendzy.online</value>
+                <value id="friendzy-public" type="host">friendzy-public-us.s3.us-east-2.amazonaws.com</value>
+                <value id="friendzy-storefront" type="host">friendzy-public-eu.s3.eu-central-1.amazonaws.com</value>
+            </values>
+        </policy>
+        <policy id="media-src">
+            <values>
+                <value id="friendzy-app" type="host">friendzy.ro</value>
+                <value id="friendzy-hosts" type="host">*.friendzy.ro</value>
+                <value id="friendzy-com" type="host">getfriendzy.com</value>
+                <value id="friendzy-com-hosts" type="host">*.getfriendzy.com</value>
+                <value id="friendzy-online-hosts" type="host">*.friendzy.online</value>
+                <value id="friendzy-public" type="host">friendzy-public-us.s3.us-east-2.amazonaws.com</value>
+            </values>
+        </policy>
+        <policy id="font-src">
+            <values>
+                <value id="friendzy-app" type="host">friendzy.ro</value>
+                <value id="friendzy-hosts" type="host">*.friendzy.ro</value>
+                <value id="friendzy-com" type="host">getfriendzy.com</value>
+                <value id="friendzy-com-hosts" type="host">*.getfriendzy.com</value>
+                <value id="friendzy-online-hosts" type="host">*.friendzy.online</value>
+            </values>
+        </policy>
+    </policies>
+</csp_whitelist>

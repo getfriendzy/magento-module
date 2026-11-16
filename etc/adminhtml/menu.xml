@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Friendzy_Widget::connect" title="Friendzy" translate="title" module="Friendzy_Widget" sortOrder="90" parent="Magento_Backend::stores_settings" action="friendzy/connect/index" resource="Friendzy_Widget::config"/>
+    </menu>
+</config>

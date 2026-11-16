@@ -1,0 +1,16 @@
+<?php
+/**
+ * @var \Magento\Framework\View\Element\Template $block
+ * @var \Magento\Framework\Escaper $escaper
+ * @var \Magento\Framework\View\Helper\SecureHtmlRenderer $secureRenderer
+ * @var \Friendzy\Widget\ViewModel\Snippet $viewModel
+ */
+$viewModel = $block->getData('view_model');
+$url = $viewModel->url();
+if ($url === '') {
+    return;
+}
+?>
+<meta name="friendzy-private-paths" content="<?= $escaper->escapeHtmlAttr($viewModel->privatePaths()) ?>">
+<meta name="friendzy-cart" content="magento" data-base="<?= $escaper->escapeHtmlAttr($viewModel->cartBase()) ?>">
+<?= /* @noEscape */ $secureRenderer->renderTag('script', ['src' => $url, 'async' => 'async'], '', false) ?>

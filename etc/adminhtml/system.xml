@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="friendzy" translate="label" sortOrder="900" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Friendzy</label>
+            <tab>service</tab>
+            <resource>Friendzy_Widget::config</resource>
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Your site</label>
+                <field id="site_id" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Site ID</label>
+                    <comment>From your Friendzy admin, such as site-abcdefghijkl. Each store view can have its own. Removing this module does not close your Friendzy site: to close it and erase its data, use Close this website in your Friendzy admin. A site Friendzy no longer sees is switched off after 30 days and erased 90 days later.</comment>
+                    <backend_model>Friendzy\Widget\Model\Config\Backend\SiteId</backend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

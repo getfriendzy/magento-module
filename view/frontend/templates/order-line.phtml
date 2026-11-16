@@ -1,0 +1,16 @@
+<?php
+/**
+ * @var \Magento\Framework\View\Element\Template $block
+ * @var \Magento\Framework\Escaper $escaper
+ * @var \Friendzy\Widget\ViewModel\OrderLine $viewModel
+ */
+$viewModel = $block->getData('view_model');
+$order = $viewModel->order();
+if ($order === null) {
+    return;
+}
+?>
+<div data-friendzy-order="<?= $escaper->escapeHtmlAttr($order['number']) ?>"
+     data-friendzy-total="<?= $escaper->escapeHtmlAttr($order['total']) ?>"
+     data-friendzy-currency="<?= $escaper->escapeHtmlAttr($order['currency']) ?>"
+     hidden></div>
